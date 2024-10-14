@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=SUSE:wght@100..800&display=swap');
+.fascinate-font{
+    font-family: "Fascinate Inline", system-ui;
+}
+.suse-font{
+    font-family: "SUSE",system-ui;
+}
+/* ------------nav style--------------------- */
+.hover-txt:hover{
+    color: rgb(209, 209, 47) !important;
+}
+/* main style */
+main .hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/image/hero-bg.jpg);
+    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*-------------------- upcoming style ----------- */
+main .upcoming{
+    background-image: url(/image/upcoming-bg.png);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* download-content */
+main .download-content{
+    /* height: 100vh; */
+    width: 100%;
+    background-image: url(/image/bg4k.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main .top-rate{
+     /* height: 100vh;  */
+    background-image: url(/image/top-rated-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+main .tv-series{
+    background-image: url(/image/tvseries.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.download-content .icon{
+    display: grid;
+    place-content: center;
+    width: 80px;
+    height: 80px;
+    outline: 2px dashed yellow;
+    outline-offset: 3px;
+    border-radius: 50%;
+}
+.download-content .icon:hover{
+    background-color: yellow;
+}
+/* ---------------card style------------- */
+/* .card .image {
+    height: 450px;
+} */
+.overflow-x-scroll::-webkit-scrollbar{
+    height: 8px;
+}
+.overflow-x-scroll::-webkit-scrollbar-thumb{
+    background-color: yellow;
+    border-radius: 16px;
+}
+.overflow-x-scroll::-webkit-scrollbar-track{
+    background-color: grey;
+    border-radius: 16px;
+}
+/* ----brightness-hover on card------- */
+.brightness-hover:hover{
+    filter: brightness(115%);
+}
+
+footer {
+    width: 100%;
+    
+}
+footer .email{
+    background-image: url(/image/cta-bg.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+footer .menu-footer{
+    background-image: url(/image/footer-bg.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* offcanvas responsive */
+@media (max-width: 576px) {
+    .offcanvas{
+        width: 85% !important;
+    }
+}
+/* screen start from 1200up */
+@media (min-width: 1200px){
+
+    .overflow-x-scroll{
+        overflow-x: hidden !important;
+    }
+}
